@@ -1,0 +1,25 @@
+{
+  "name": "js-data-structure",
+  "version": "1.0.0",
+  "description": "js-data-structure",
+  "main": "index.js",
+  "dependencies": {
+    "babel": "^6.5.2"
+  },
+  "devDependencies": {
+    "nodeunit": "^0.9.1"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://"
+  },
+  "keywords": [
+    "data structure",
+    "javascript"
+  ],
+  "author": "wdpm",
+  "license": "MIT"
+}

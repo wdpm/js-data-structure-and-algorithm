@@ -14,12 +14,14 @@
 要找36美分的零钱，求解所需的最少硬币数的组合方案
 ```
 >DP算法中，先找到对每个x<n的解。然后，将解建立在更小的值的解的基础上。 
+
 ``` js
 //TODO:代码解析
 ```
 
 # Greedy Algorithm
 >希望通过每个阶段的局部最优解，来达全局最优解
+
 ``` js
     var coins = coins;
 
@@ -43,7 +45,6 @@
      var minCoinChange2 = new MinCoinChange([1, 3, 4]);
      console.log(minCoinChange2.makeChange(6));//[ 4, 1, 1 ]
 ```
-- 打印过程：
 ```
 total 0 + coin 4
 change: 4

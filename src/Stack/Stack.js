@@ -34,3 +34,5 @@ function Stack() {
         return items.toString();
     };
 }
+
+exports.Stack = Stack;

@@ -1,3 +1,5 @@
+var Stack = require('../../src/Stack/Stack').Stack;
+
 function matches(open, close) {
     var opens = "([{",
         closers = ")]}";
@@ -13,6 +15,7 @@ function parenthesesChecker(symbols) {
 
     while (index < symbols.length && balanced) {
         symbol = symbols.charAt(index);
+        console.log(symbol);
         if (symbol == '(' || symbol == '[' || symbol == '{') {
             stack.push(symbol);
         } else {
@@ -27,10 +30,8 @@ function parenthesesChecker(symbols) {
         }
         index++;
     }
-    if (balanced && stack.isEmpty()) {
-        return true;
-    }
-    return false;
+    return !!(balanced && stack.isEmpty());
+
 }
 
 console.log(parenthesesChecker('{{([][])}()}'));
